@@ -121,3 +121,17 @@ a:hover {
     font-size: 10px;
   }
 }
+@media (min-width: 2560px) and (max-width: 9000px) {
+  nav {
+    padding-left: 800px;
+  }
+  .bom__gosto {
+    font-size: 30px;
+  }
+  .contato,
+  .home,
+  .menu,
+  .sobre {
+    font-size: 25px;
+  }
+}

@@ -18,8 +18,9 @@
 
 .titulo__principal {
   width: 40%;
-  height: 60px;
-  margin-top: 100px;
+  height: 100px;
+  /* margin-top: 100px; */
+  padding: 50px 0;
   text-decoration: underline;
   text-decoration-color: #f2c94c;
   text-align: center;
@@ -33,9 +34,9 @@
 
 .texto__principal {
   width: 80%;
-  height: 201px;
+  height: 300px;
 
-  margin-top: 100px;
+  padding: 50px 0 0 0;
 
   font-family: "Ruda";
   font-style: normal;
@@ -51,12 +52,12 @@
 
 .imagem__principal {
   width: 100%;
-  height: 890px;
+  height: 500px;
 
   background-image: url("../imagens/pizza.png");
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: contain;
+  background-size: cover;
 }
 .container__sobre {
   width: 100%;
@@ -67,10 +68,9 @@
   flex-direction: column;
 }
 .titulo__sobre {
-  width: 90%;
-
-  margin-top: 55px;
-  margin-left: 50px;
+  width: 100%;
+  padding: 50px 70px;
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: #f2c94c;
 
@@ -89,9 +89,9 @@
 .texto__sobre {
   width: 40%;
 
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: justify;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-family: "Ruda";
   font-style: normal;
   font-weight: 400;
@@ -132,15 +132,15 @@
   margin-top: 50px;
 }
 .imagem__sobre {
-  width: 60%;
+  width: 40%;
   height: 500px;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
     url("../imagens/restaurant.png");
   border-radius: 5px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: auto;
+  background-position: right center;
 }
 
 .container__menu {
@@ -153,9 +153,7 @@
 .titulo__menu {
   width: 100%;
   text-align: center;
-  height: 52px;
-  left: 470px;
-  margin-top: 50px;
+  padding: 50px 0;
   font-family: "Quattrocento";
   font-style: normal;
   font-weight: 400;
@@ -168,8 +166,8 @@
 
 .texto__menu {
   width: 100%;
-  height: 236px;
-  padding: 0 20px;
+  height: 256px;
+  padding: 50px 70px;
 
   font-family: "Ruda";
   font-style: normal;
@@ -186,12 +184,14 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  border: 1px solid #000;
+  border-width: 100%;
 }
 .imagem__menu1 {
   width: 576px;
   height: 356px;
-  margin-left: 30px;
+
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 85.42%,
@@ -206,8 +206,7 @@
 .imagem__menu2 {
   width: 576px;
   height: 356px;
-  margin-left: 30px;
-  margin-right: 30px;
+
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 85.42%,
@@ -256,12 +255,12 @@
   background-color: #000;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .titulo__localizacao {
   width: 100%;
   text-align: center;
-
-  margin-top: 50px;
+  padding: 50px 0;
   font-family: "Quattrocento";
   font-style: normal;
   font-weight: 400;
@@ -277,10 +276,9 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  padding-top: 50px;
 }
 .texto__localizacao {
-  width: 400px;
+  width: 40%;
   height: 419px;
   text-align: justify;
   font-family: "Ruda";
@@ -294,7 +292,7 @@
   color: #ffffff;
 }
 .imagem__localizacao {
-  width: 603px;
+  width: 41%;
   height: 567px;
 
   background: url("../imagens/location.jpg");
@@ -304,11 +302,10 @@
 }
 .container__final {
   width: 100%;
-  height: 800px;
+  height: 200px;
   background-color: #000;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
   background-image: url("../imagens/quadro.jpg");
@@ -318,22 +315,22 @@
   background-attachment: fixed;
 }
 
-.imagem__final {
+/* .imagem__final {
   width: 100%;
   height: 590px;
-  margin-right: 130px;
+
   background-image: url("../imagens/pizza.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
 
   transform: rotate(180deg);
-}
+} */
 
 .titulo__final {
   width: 40%;
   height: 60px;
-
+  padding: 60px 0 0 0;
   text-decoration: underline;
   text-decoration-color: #f2c94c;
   text-align: center;
@@ -346,6 +343,9 @@
 }
 
 @media (max-width: 320px) {
+  .titulo__principal {
+    padding: 20px 0;
+  }
   .imagem__menu1 {
     width: 100%;
     margin-left: 10px;
@@ -375,11 +375,10 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .container__principal {
     width: 100%;
     height: 600px;
-    position: relative;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -392,43 +391,45 @@
   .titulo__principal {
     width: 60%;
     font-size: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   .texto__principal {
     width: 90%;
     font-size: 15px;
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 0;
   }
   .imagem__principal {
     width: 100%;
-
+    height: 180px;
     background-size: contain;
     background-position: bottom center;
   }
   .container__sobre {
     width: 100%;
     height: 550px;
-    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   .titulo__sobre {
-    width: 50%;
+    width: 100%;
     align-items: center;
     font-size: 20px;
-    margin-left: 20px;
+    padding: 10px 20px;
   }
   .div_texto__imagem {
     display: flex;
     flex-direction: row;
+    height: 450px;
+    padding: 10px 10px;
   }
   .texto__sobre {
     width: 50%;
     font-size: 10px;
 
-    margin-left: 10px;
+    line-height: 25px;
   }
   .link__sobre {
     width: 60px;
@@ -438,33 +439,43 @@
   }
   .imagem__sobre {
     width: 40%;
-    background-position: right 100px;
+    background-position: right 10px;
     background-size: contain;
-    margin-left: 20px;
   }
   .container__menu {
     width: 100%;
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   .titulo__menu {
     font-size: 20px;
+    padding-top: 50px;
   }
   .texto__menu {
-    font-size: 15px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    padding: 0px 20px;
+    font-size: 10px;
   }
   .container_imagem__menu {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .imagem__menu1 {
-    height: 200px;
+    height: 150px;
+    width: 100%;
     background-size: contain;
+    margin: 0;
   }
   .imagem__menu2 {
-    height: 200px;
+    height: 150px;
+    width: 100%;
     background-size: contain;
+    margin: 0;
   }
   .link_posicao__menu {
     width: 100%;
@@ -487,21 +498,23 @@
   .titulo__localizacao {
     font-size: 20px;
   }
+  .container_texto_imagem__localizacao {
+    padding: 0 10px;
+  }
   .texto__localizacao {
-    font-size: 13px;
+    font-size: 10px;
     width: 50%;
   }
 
   .imagem__localizacao {
     width: 40%;
     height: 200px;
-    background-position: top center;
+    background-position: center;
     background-size: contain;
-    margin-top: 50px;
   }
   .container__final {
     width: 100%;
-    height: 450px;
+    height: 150px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -511,15 +524,57 @@
     flex-direction: column;
     align-items: center;
   }
-  .imagem__final {
+  /* .imagem__final {
     width: 100%;
     height: 200px;
     background-size: contain;
     background-position: bottom center;
     margin-right: 30px;
-  }
+  } */
   .titulo__final {
     width: 60%;
     font-size: 20px;
+  }
+}
+@media (min-width: 2560px) and (max-width: 9000px) {
+  .titulo__principal {
+    font-size: 60px;
+  }
+  .texto__principal {
+    font-size: 30px;
+  }
+  .imagem__principal {
+    width: 70%;
+  }
+
+  .div_texto__imagem {
+    justify-content: center;
+    padding: 50px 0;
+  }
+  .texto__sobre {
+    font-size: 30px;
+  }
+  .imagem__sobre {
+    height: 600px;
+  }
+  .texto__menu {
+    font-size: 30px;
+    padding: 20px 250px;
+  }
+  .container_imagem__menu {
+    justify-content: space-between;
+    padding: 20px 250px;
+  }
+  .imagem__menu1,
+  .imagem__menu2 {
+    width: 40%;
+    height: 500px;
+  }
+  .link_posicao__menu {
+    margin: 0;
+  }
+  .container_texto_imagem__localizacao {
+    justify-content: space-between;
+    padding: 20px 250px;
   }
 }
