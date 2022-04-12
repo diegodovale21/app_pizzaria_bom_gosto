@@ -1,0 +1,101 @@
+.container_pagina__contato {
+  width: 100%;
+  height: 900px;
+  padding-top: 50px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.titulo_pagina__contato {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f2c94c;
+  margin-bottom: 50px;
+
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 0px;
+  color: #ffffff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+  padding-left: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Ruda";
+}
+
+.input__padrao {
+  display: flex;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+.div__contato {
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  width: 1%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.checkbox {
+  margin: 10px 0;
+}
+.checkbox input {
+  width: 1%;
+  margin-right: 10px;
+}
+
+.enviar {
+  width: 30%;
+  padding: 15px 0;
+  background: #000;
+  color: #f2c94c;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #f2c94c;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  color: #ffffff;
+  background: darkorange;
+}
+@media screen and (max-width: 768px) {
+  .container_pagina__contato {
+    width: 100%;
+    height: 948px;
+  }
+  .titulo_pagina__contato {
+    font-size: 20px;
+  }
+  form {
+    font-size: 15px;
+  }
+  .input__padrao {
+    width: 90%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+  }
+  .enviar {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  .radio {
+    width: 5%;
+  }
+  .checkbox input {
+    width: 5%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,123 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin: 0;
+  padding-left: 400px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.bom__gosto {
+  padding-left: 13px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.home {
+  width: 131px;
+  top: 29px;
+  padding-right: 10px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  transition: 1s all;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+  color: darkorange;
+}
+
+.sobre {
+  width: 131px;
+  top: 29px;
+  padding-right: 10px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.menu {
+  width: 131px;
+  padding-right: 10px;
+  top: 29px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+.contato {
+  top: 29px;
+  padding-right: 10px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+@media (max-width: 320px) {
+  nav {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .home,
+  .sobre,
+  .menu,
+  .contato {
+    margin-right: 10px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .bom__gosto {
+    padding: 0;
+  }
+}
+@media (max-width: 762px) {
+  .header {
+    width: 100%;
+    position: relative;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bom__gosto {
+    width: 40%;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 20px;
+  }
+  nav {
+    padding: 0;
+    width: 60%;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .home,
+  .menu,
+  .sobre,
+  .contato {
+    margin-right: 30px;
+    font-size: 10px;
+  }
+}

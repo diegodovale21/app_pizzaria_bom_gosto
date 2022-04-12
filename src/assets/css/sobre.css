@@ -1,0 +1,89 @@
+.container_pagina__sobre {
+  width: 100%;
+  height: 800px;
+  padding-top: 10px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.titulo_pagina__sobre {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f2c94c;
+  padding: 20px 0;
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 0px;
+  color: #ffffff;
+}
+.container_pagina_sobre__texto__imagem {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 20px;
+}
+.texto_pagina__sobre {
+  width: 90%;
+  height: 400px;
+  padding: 0 20px;
+  justify-content: center;
+  text-align: justify;
+
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+
+  letter-spacing: 0.09em;
+
+  color: #ffffff;
+}
+.imagem_pagina__sobre {
+  width: 50%;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 85.42%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../imagens/sobre.png");
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media (max-width: 320px) {
+  .texto_pagina__sobre {
+    height: 56%;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container_pagina__sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo_pagina__sobre {
+    font-size: 20px;
+  }
+  .texto_pagina__sobre {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .container_pagina_sobre__texto__imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+  }
+  .imagem_pagina__sobre {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 250px;
+  }
+}

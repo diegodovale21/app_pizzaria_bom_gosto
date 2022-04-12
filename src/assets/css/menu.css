@@ -1,0 +1,207 @@
+.container_pagina__menu {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_pagina__menu {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #f2c94c;
+  margin-bottom: 50px;
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 0px;
+  color: #ffffff;
+}
+.container_pagina_menu__item {
+  display: grid;
+
+  /* grid-template-columns: 33.3% 33.3% 33.3%; */
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin-top: 50px;
+}
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.imagem__item1 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/item_calabresa.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.titulo__item1,
+.titulo__item2,
+.titulo__item3,
+.titulo__item4,
+.titulo__item5,
+.titulo__item6 {
+  width: 100%;
+  height: 31px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+
+  color: #f2c94c;
+}
+.texto__item1,
+.texto__item2,
+.texto__item3,
+.texto__item4,
+.texto__item5,
+.texto__item6 {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.preco__item1,
+.preco__item2,
+.preco__item3,
+.preco__item4,
+.preco__item5,
+.preco__item6 {
+  width: 100%;
+  height: 51px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 0px;
+
+  color: #f2c94c;
+}
+.imagem__item2 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/item_frango_requeijao.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagem__item3 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/item_portuguesa.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagem__item4 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/item_quatro_queijos.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagem__item5 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/item_banana_nevada.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imagem__item6 {
+  width: 273px;
+  height: 200px;
+
+  background: url("../imagens/nutella_morango.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 900px) {
+  .container_pagina__menu {
+    width: 100%;
+    height: 2500px;
+  }
+  .titulo_pagina__menu {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container_pagina_menu__item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__item {
+    display: flex;
+  }
+  .imagem__item1,
+  .imagem__item2,
+  .imagem__item3,
+  .imagem__item4,
+  .imagem__item5,
+  .imagem__item6 {
+    background-size: 150px;
+    margin-top: 30px;
+  }
+  .titulo__item1,
+  .titulo__item2,
+  .titulo__item3,
+  .titulo__item4,
+  .titulo__item5,
+  .titulo__item6 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .texto__item1,
+  .texto__item2,
+  .texto__item3,
+  .texto__item4,
+  .texto__item5,
+  .texto__item6 {
+    font-size: 15px;
+    height: 90px;
+    margin-top: 0px;
+    letter-spacing: 0;
+  }
+  .preco__item1,
+  .preco__item2,
+  .preco__item3,
+  .preco__item4,
+  .preco__item5,
+  .preco__item6 {
+    font-size: 20px;
+    height: 30px;
+    margin-top: 20px;
+  }
+}
